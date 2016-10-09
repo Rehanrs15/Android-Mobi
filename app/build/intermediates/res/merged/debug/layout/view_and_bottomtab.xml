@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background">
+
+
+    <com.sembozdemir.viewpagerarrowindicator.library.ViewPagerArrowIndicator
+        android:id="@+id/viewPagerArrowIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:color="@color/white"
+        android:layout_below="@+id/toolbar"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="470dp" />
+
+    </com.sembozdemir.viewpagerarrowindicator.library.ViewPagerArrowIndicator>
+
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:id="@+id/tab_layout"
+        android:layout_alignParentBottom="true"
+        app:tabTextColor="@color/white"
+        app:tabTextAppearance="@style/CustomTextStyle"
+        app:theme="@style/Widget.Design.TabLayout"
+        app:tabIndicatorColor="@color/background"
+        app:tabSelectedTextColor="@color/white"
+        android:fitsSystemWindows="true"
+        >
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recharge"
+            android:textAlignment="center"
+            android:icon="@drawable/recharge"
+            android:id="@+id/recharge"
+            android:background="@color/white"
+            />
+
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offers"
+            android:textAlignment="center"
+            android:icon="@drawable/offers"
+            android:id="@+id/offers"
+            android:background="@color/white"/>
+
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop"
+            android:textAlignment="center"
+            android:icon="@drawable/shop"
+            android:id="@+id/shop"
+            android:background="@color/white"
+            />
+
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nearby"
+            android:textAlignment="center"
+            android:icon="@drawable/nearby"
+            android:id="@+id/nearby"
+            android:background="@color/white"/>
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wallet"
+            android:textAlignment="center"
+            android:icon="@drawable/wallet"
+            android:id="@+id/wallet"
+            android:background="@color/white"/>
+
+    </android.support.design.widget.TabLayout>
+</RelativeLayout>

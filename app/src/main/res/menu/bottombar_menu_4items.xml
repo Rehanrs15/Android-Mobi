@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group android:checkableBehavior="all">
+
+
+        <item
+            android:id="@+id/mywallet"
+            android:title="My Wallet"
+            android:icon="@drawable/user"
+            />
+
+        <item
+            android:id="@+id/earn"
+            android:title="Earn Kwikly"
+            android:icon="@drawable/earn"
+            />
+
+        <item
+            android:id="@+id/upgrade"
+            android:title="Upgrade Wallet"
+            android:icon="@drawable/upgrade"
+            />
+
+        <item
+            android:id="@+id/notifications"
+            android:title="Notifications"
+            android:icon="@drawable/notification"
+            />
+
+        <item
+            android:id="@+id/cash_depositi"
+            android:title="Cash Deposit/Pickup"
+            android:icon="@drawable/cash"
+            />
+
+        <item
+            android:id="@+id/pay_pain"
+            android:title="Pay with PIN"
+            android:icon="@drawable/upgrade"
+            />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:menuCategory="secondary"
+        android:id="@+id/secondary">
+            <item
+                android:title="Help"
+                android:visible="false"
+                android:id="@+id/help"
+                android:icon="@drawable/ic_action_help"
+                />
+
+
+            <item
+                android:title="About Us"
+                android:id="@+id/aboutus"
+                android:icon="@drawable/ic_action_name"
+                >
+            </item>
+    </group>
+
+
+
+
+
+</menu>

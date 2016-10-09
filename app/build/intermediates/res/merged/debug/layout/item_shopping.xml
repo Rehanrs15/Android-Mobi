@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/user_icon"
+        android:id="@+id/item_image"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wish"
+            android:layout_toRightOf="@+id/item_image"
+            android:id="@+id/wishlist"
+            />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="33% off"
+            android:layout_below="@+id/item_image"
+            android:id="@+id/itemoff"
+            android:padding="5dp"
+            android:background="@mipmap/splash_button"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemoff"
+            android:textSize="12sp"
+            android:text="Adidas Galba 1 M gray Sports Shoe"
+            android:lines="2"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/item_name"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs. 2,333"
+            android:textColor="@color/black"
+            android:layout_below="@+id/item_name"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/actual_price"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~Rs. 2,333~"
+            android:textColor="@color/black"
+            android:layout_below="@+id/item_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/actual_price"
+            android:id="@+id/cancel_price"
+            />
+
+
+    </RelativeLayout>
+</RelativeLayout>

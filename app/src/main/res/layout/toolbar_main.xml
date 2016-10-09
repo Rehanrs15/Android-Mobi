@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:id="@+id/toolbar"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transfer / Pay to..."
+        android:textColor="@color/white"
+        android:background="@mipmap/splash_button"
+        android:gravity="center"
+        android:id="@+id/transer_pay"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/transer_pay"
+        android:text="@string/rupee"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/rs"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Money"
+        android:textColor="@color/white"
+        android:layout_below="@+id/rs"
+        android:id="@+id/add_money"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@mipmap/add"
+        android:drawablePadding="3dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/hamburger_one"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/hamburger"
+        android:tint="@color/white" />
+</RelativeLayout>

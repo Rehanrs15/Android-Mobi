@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.examples.rehan.rehan.Activities.Activities.ViewpagerActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@mipmap/user_icon"
+        android:id="@+id/image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IRCTC"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:layout_below="@+id/image"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="serif-monospace"
+        android:padding="10dp"
+        android:id="@+id/title"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/image"
+        android:id="@+id/description"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Up to Rs. 150 cashback on IRCTC!"
+            android:textSize="15sp"
+            android:layout_below="@+id/title"
+            tools:ignore="NotSibling" />
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:id="@+id/drawerlayout"
+    tools:context="com.examples.rehan.rehan.Activities.Activities.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/main_content">
+
+    <include
+        layout="@layout/toolbar_main"
+        android:id="@+id/toolbar"/>
+
+    <include
+        layout="@layout/view_and_bottomtab"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+
+    <android.support.design.widget.NavigationView
+        android:layout_height="match_parent"
+        android:layout_width="250dp"
+        android:id="@+id/navigation_drawer"
+        app:menu="@menu/bottombar_menu_4items"
+        android:background="#546E7A"
+        android:layout_gravity="end"
+        app:headerLayout="@layout/navigation_header"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        android:textAlignment="viewStart"
+        >
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>
